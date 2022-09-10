@@ -29,9 +29,9 @@ class Gallery(models.Model):
 
 class Team(models.Model):
     name = models.CharField(max_length=200)
-    rank = models.Charfield(max_length=200)
-    phone = models.Charfield(max_length=200)
-    picture = models.Filefield(upload_to='team_images')
+    rank = models.CharField(max_length=200)
+    phone = models.CharField(max_length=200)
+    picture = models.FileField(upload_to='team_images')
     def __str__(self):
         return self.name
 
