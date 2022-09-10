@@ -25,6 +25,15 @@ class GroupType(models.Model):
 
 class Gallery(models.Model):
     image = models.FileField(upload_to='gallery')
+ 
+
+class LocalGovt(models.Model):
+    name = models.CharField(max_length=200)
+    rank = models.Charfield(max_length=200)
+    phone = models.Charfield(max_length=200)
+    picture models.Filefield(upload_to='team_images')
+    def __str__(self):
+        return self.name
 
 
 class Registeration(models.Model):
