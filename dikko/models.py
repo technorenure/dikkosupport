@@ -27,7 +27,7 @@ class Gallery(models.Model):
     image = models.FileField(upload_to='gallery')
  
 
-class LocalGovt(models.Model):
+class Team(models.Model):
     name = models.CharField(max_length=200)
     rank = models.Charfield(max_length=200)
     phone = models.Charfield(max_length=200)
